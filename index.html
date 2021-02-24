@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <main class="d-flex justify-content-center align-items-center vh-100">
+      <section class="container">
+        <div class="text-center text-white">
+          <h1>Genera una contraseña segura</h1>
+          <p>Crea de forma instantanea una contraseña aleatoria y segura</p>
+        </div>
+        <section class="bg-light mt-3" id="Password-result">
+          <div class="form-group" id="result">
+            <input
+              type="text"
+              class="form-control p-2 text-center"
+              name=""
+              id="pass-display"
+              aria-describedby="helpId"
+              placeholder="Genera una contraseña"
+              readonly
+            />
+          </div>
+          <div class="progress" style="height: 5px">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              id="progress"
+            ></div>
+          </div>
+        </section>
+        <section
+          class="bg-light p-3 mt-3 rounded shadow"
+          id="password-settings"
+        >
+          <h3>Personalice su contraseña</h3>
+          <form id="passwordGeneratorForm">
+            <div class="row p-2 d-flex align-items-center align-content-center">
+              <div class="col-6 col-sm-12 col-md-6 p-1">
+                <label for="customRange2" class="form-label"
+                  >Longitud de contraseña
+                  <span
+                    class="badge bg-primary"
+                    id="badge"
+                    data-toggle="tooltip"
+                    title="Hooray!"
+                    >0</span
+                  ></label
+                >
+                <input
+                  type="range"
+                  class="form-range"
+                  min="6"
+                  max="24"
+                  id="pass-range"
+                  value="10"
+                />
+              </div>
+              <div
+                class="col-6 col-sm-12 col-md-6 p-1 px-4"
+              >
+              
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="flexRadioDefault"
+                    id="Uppercase"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Incluir Mayusculas
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="flexRadioDefault"
+                    id="Numbers"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Incluir Números
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="flexRadioDefault"
+                    id="Symbols"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Incluir Símbolos
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-3">
+
+              <button type="submit" class="btn btn-primary">Generar</button>
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
