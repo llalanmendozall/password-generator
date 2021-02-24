@@ -9,8 +9,8 @@ const includeUppercaseElement = document.getElementById("Uppercase");
 
 document.getElementById("badge").innerHTML = longPassword.value;
 // charcode
-const LOWERCASE_CHAR_CODES = arrayFromLowtoHigh(65, 90);
-const UPPERCASE_CHAR_CODES = arrayFromLowtoHigh(97, 122);
+const LOWERCASE_CHAR_CODES = arrayFromLowtoHigh(97, 122);
+const UPPERCASE_CHAR_CODES = arrayFromLowtoHigh(65, 90);
 const NUMBER_CHAR_CODES = arrayFromLowtoHigh(48, 57);
 const SYMBOL_CHAR_CODES = arrayFromLowtoHigh(33, 47)
   .concat(arrayFromLowtoHigh(58, 64))
